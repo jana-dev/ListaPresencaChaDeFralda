@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-image: url('./fundoheader.jpg');
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #E79EED;
+    font-size: 5vw;
+}
+header h3{
+    color: #FC9BC6;
+    font-size: 4vw;
+}
+.img-header{
+    width: 130px;
+}
+.img-header img{
+   width: 130px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #FFD8CF;
+    height: 40px;
+    color: rgb(84, 84, 84);
+    font-size: 12px;
+}
+.center{
+    padding: 20px;
+    text-align: center;
+}
+.center h4{
+    color: #aa70b0;
+    margin: 5px;
+}
+.center p{
+    font-size: 14px;
+    margin: 10px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 300px;
+    margin: 30px auto;
+}
+.formulario input{
+    padding: 5px;
+    border: 1px solid #aa70b0; 
+    border-radius: 5px;
+}
+.formulario input:focus{
+    outline: none
+}
+#bt-confirmar{
+    background-color: #aa70b0;
+}
+#bt-finalizar{
+    background-color: #6d79ad;
+}
+button{
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bt-finalizar{
+    margin: 30px;
+}
+
+.modal-agradecimento{
+    display: none;
+}
