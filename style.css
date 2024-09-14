@@ -10,18 +10,18 @@ body{
 header{
     background-image: url('./fundoheader.jpg');
     background-size: cover;
-    height: 150px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 header h1{
     color: #E79EED;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 header h3{
     color: #FC9BC6;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 .img-header{
     width: 130px;
@@ -63,7 +63,7 @@ footer{
     margin: 30px auto;
 }
 .formulario input{
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #aa70b0; 
     border-radius: 5px;
 }
@@ -79,7 +79,7 @@ footer{
 button{
     color: white;
     border: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -89,4 +89,10 @@ button{
 
 .modal-agradecimento{
     display: none;
+    background-color: #FFD8CF;
+    padding: 20px;
+    color: #aa70b0;
+    border-radius: 20px;
+
+
 }
