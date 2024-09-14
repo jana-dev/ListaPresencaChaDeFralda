@@ -17,6 +17,7 @@ const conteudoPrincipal = document.querySelector('.conteudo-principal');
 btnConfirmar.addEventListener('click', () => {
     const nome = inputNome.value; // Captura o valor do input
     if (nome) {
+        salvarNomeNoFirebase(nome)
         conteudoPrincipal.style.display = 'none';
         modalAgradecimento.style.display = 'block'; // Exibe o modal de agradecimento
         inputNome.value = ''; // Limpa o input após confirmar
