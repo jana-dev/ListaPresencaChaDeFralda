@@ -70,6 +70,12 @@ footer{
 .formulario input:focus{
     outline: none
 }
+span{
+    text-align: start;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
 #bt-confirmar{
     background-color: #aa70b0;
 }

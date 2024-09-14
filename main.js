@@ -10,24 +10,18 @@ function salvarNomeNoFirebase(nome) {
 // Captura os elementos da página
 const inputNome = document.querySelector('input');
 const btnConfirmar = document.getElementById('bt-confirmar');
-const btnFinalizar = document.getElementById('bt-finalizar');
 const modalAgradecimento = document.querySelector('.modal-agradecimento');
 const conteudoPrincipal = document.querySelector('.conteudo-principal');
 
 // Lógica ao clicar no botão "Confirmar"
 btnConfirmar.addEventListener('click', () => {
-    const nome = inputNome.value.trim(); // Captura o valor do input
+    const nome = inputNome.value; // Captura o valor do input
     if (nome) {
-        salvarNomeNoFirebase(nome); // Envia o nome para o Firebase
-        alert('Nome(s) confirmado(s)!'); // Alerta de sucesso
+        conteudoPrincipal.style.display = 'none';
+        modalAgradecimento.style.display = 'block'; // Exibe o modal de agradecimento
         inputNome.value = ''; // Limpa o input após confirmar
     } else {
-        alert('Por favor, digite um nome.');
+        alert('Por favor, digite pelo menos um nome!');
     }
 });
 
-// Lógica ao clicar no botão "Finalizar"
-btnFinalizar.addEventListener('click', () => {
-    conteudoPrincipal.style.display = 'none';
-    modalAgradecimento.style.display = 'block'; // Exibe o modal de agradecimento
-});
